@@ -4,3 +4,5 @@
 alien -i /tmp/oracle_client_rpms/oracle12/oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm
 alien -i /tmp/oracle_client_rpms/oracle12/oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm
 alien -i /tmp/oracle_client_rpms/oracle12/oracle-instantclient12.1-sqlplus-12.1.0.2.0-1.x86_64.rpm
+
+echo 'export "LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib"' >> ~/.bashrc
