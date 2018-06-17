@@ -1,0 +1,4 @@
+FROM ruby:2.5.1-stretch
+
+RUN apt -y update
+RUN apt-get install --assume-yes openjdk-8-jre

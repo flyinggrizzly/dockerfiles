@@ -1,0 +1,8 @@
+FROM ruby:2.5.1-stretch
+
+RUN apt -y update && \
+    apt -y install wget
+RUN wget https://github.com/gohugoio/hugo/releases/download/v0.42.1/hugo_0.42.1_Linux-64bit.tar.gz
+RUN tar -xvf hugo_0.42.1_Linux-64bit.tar.gz
+RUN mv hugo /usr/local/bin/hugo
+RUN apt-get install --assume-yes openjdk-8-jre
